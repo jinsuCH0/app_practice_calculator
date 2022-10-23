@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtInputMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:focusable="false"
+        android:singleLine="false"
+        android:gravity="center_vertical|end"
+        android:paddingEnd="@dimen/txt_main_padding_end"
+        android:textSize="@dimen/txt_main_size"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="0"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/btnCE"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_grey"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="CE"
+            tools:ignore="HardcodedText,NestedWeights" />
+        <Button
+            android:id="@+id/btnC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_grey"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="C"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnPercent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_grey"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="%"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_yellow"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="÷"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="7"
+            tools:ignore="HardcodedText,NestedWeights" />
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="8"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="9"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_yellow"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="×"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="4"
+            tools:ignore="HardcodedText,NestedWeights" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="5"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="6"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_yellow"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="-"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="1"
+            tools:ignore="HardcodedText,NestedWeights" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="2"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="3"
+            tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/borderline_button_yellow"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="+"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/borderline_button_zero"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textColor="@color/white"
+            android:text="0"
+            tools:ignore="HardcodedText,NestedWeights" />
+        <Button
+            android:id="@+id/btnPoint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:background="@drawable/borderline_button_darker"
+            android:layout_margin="@dimen/default_margin"
+            android:textSize="@dimen/default_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="."
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_weight="0.25"
+            android:background="@drawable/borderline_button_yellow"
+            android:textColor="@color/white"
+            android:text="="
+            android:textSize="@dimen/default_font_size"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>
